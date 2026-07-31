@@ -32,7 +32,6 @@ Student Management System is a web-based application developed using Java Servle
 4. Open the application in your browser.
 
 ## 👨‍💻 Author
-   Dharmveer kumar
 **Dharmveer Kumar**
 
 GitHub: https://github.com/DHARMVEER75
