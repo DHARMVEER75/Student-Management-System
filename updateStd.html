@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Update Student</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background:#f2f2f2;
+        }
+
+        .container{
+            width:500px;
+            margin:40px auto;
+            background:white;
+            padding:25px;
+            border-radius:10px;
+            box-shadow:0 0 10px rgba(0,0,0,0.2);
+        }
+
+        h1{
+            text-align:center;
+            color:#0d6efd;
+            margin-bottom:20px;
+        }
+
+        fieldset{
+            border:2px solid #0d6efd;
+            border-radius:8px;
+            margin-bottom:20px;
+            padding:15px;
+        }
+
+        legend{
+            color:#0d6efd;
+            font-weight:bold;
+            padding:0 10px;
+        }
+
+        table{
+            width:100%;
+        }
+
+        td{
+            padding:10px;
+        }
+
+        input[type=text],
+        input[type=number]{
+
+            width:100%;
+            padding:8px;
+            border:1px solid gray;
+            border-radius:5px;
+            font-size:15px;
+        }
+
+        input[type=text]:focus,
+        input[type=number]:focus{
+
+            border:2px solid #0d6efd;
+            outline:none;
+        }
+
+        .btn{
+            text-align:center;
+        }
+
+        input[type=submit],
+        input[type=reset]{
+
+            background:#0d6efd;
+            color:white;
+            border:none;
+            padding:10px 20px;
+            font-size:16px;
+            border-radius:5px;
+            cursor:pointer;
+            margin:5px;
+        }
+
+        input[type=submit]:hover{
+            background:#084298;
+        }
+
+        input[type=reset]{
+            background:#dc3545;
+        }
+
+        input[type=reset]:hover{
+            background:#a71d2a;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Update Student</h1>
+
+<form action="update" method="post">
+
+    <fieldset>
+
+        <legend>Student Details</legend>
+
+        <table>
+
+            <tr>
+                <td>Student ID</td>
+                <td>
+                    <input type="text" name="studentId" placeholder="Enter existing Student ID" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Student Name</td>
+                <td>
+                    <input type="text" name="studentName" placeholder="Enter Student Name" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Hindi</td>
+                <td><input type="number" name="hindi" min="0" max="100"></td>
+            </tr>
+
+            <tr>
+                <td>English</td>
+                <td><input type="number" name="english" min="0" max="100"></td>
+            </tr>
+
+            <tr>
+                <td>Mathematics</td>
+                <td><input type="number" name="maths" min="0" max="100"></td>
+            </tr>
+
+            <tr>
+                <td>Science</td>
+                <td><input type="number" name="science" min="0" max="100"></td>
+            </tr>
+
+            <tr>
+                <td>Social Science</td>
+                <td><input type="number" name="socialScience" min="0" max="100"></td>
+            </tr>
+
+            <tr>
+                <td>Computer</td>
+                <td><input type="number" name="computer" min="0" max="100"></td>
+            </tr>
+
+            <tr>
+                <td>Sanskrit</td>
+                <td><input type="number" name="sanskrit" min="0" max="100"></td>
+            </tr>
+
+        </table>
+
+    </fieldset>
+
+    <div class="btn">
+        <input type="submit" value="Update">
+        <input type="reset" value="Reset">
+    </div>
+
+</form>
+
+</div>
+
+</body>
+</html>
